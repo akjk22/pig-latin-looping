@@ -1,0 +1,109 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "node": ">=10.15.3"
+  },
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "axios": "^0.19.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-gatsby": "^0.1.11",
+    "classnames": "^2.2.6",
+    "concurrently": "^4.1.1",
+    "cypress": "^3.2.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "express": "^4.17.1",
+    "firebase": "^6.0.2",
+    "gatsby": "^2.3.5",
+    "gatsby-cli": "^2.5.4",
+    "gatsby-image": "^2.0.37",
+    "gatsby-plugin-env-variables": "^1.0.1",
+    "gatsby-plugin-google-tagmanager": "^2.1.5",
+    "gatsby-plugin-less": "^2.0.13",
+    "gatsby-plugin-manifest": "^2.2.5",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-polyfill-io": "^1.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.11",
+    "gatsby-plugin-react-svg": "^2.1.2",
+    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-sitemap": "^2.2.19",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "less": "^3.9.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-card-flip": "^0.8.1",
+    "react-dom": "^16.8.6",
+    "react-dropzone": "^10.1.5",
+    "react-easy-swipe": "^0.0.18",
+    "react-helmet": "^5.2.0",
+    "react-horizontal-scrolling-menu": "^0.7.3",
+    "react-lazy": "^1.1.0",
+    "react-markdown": "^4.0.8",
+    "react-redux": "^7.1.0",
+    "react-reveal": "^1.2.2",
+    "react-scroll-to": "^2.0.10",
+    "react-swipeable": "^5.4.0",
+    "react-swipeable-views": "^0.13.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "svg-react-loader": "^0.4.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-cypress": "^2.2.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-json": "^1.4.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "prettier": "^1.16.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "dev": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "e2e:record": "cypress run --record --key 66c5c2f0-c8fe-441f-b664-5f82c35af369 --config video=false",
+    "cy:verify": "cypress verify",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "fix": "./node_modules/.bin/eslint src --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,json}": [
+        "eslint",
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "*.md"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
